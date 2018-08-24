@@ -3,7 +3,7 @@ var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   '/test.html',
-  '/styles/main.css',
+  '/images/icons/icon-128.png',
   '/'
 ];
 
