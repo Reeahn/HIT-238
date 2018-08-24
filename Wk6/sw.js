@@ -2,9 +2,9 @@ var CACHE_TITLE = 'my-site-cache';
 var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
-  '/test.html',
-  '/images/icons/icon-128.png',
-  '/'
+  'test.html',
+  'images/icons/icon-128.png',
+  '.'
 ];
 
 self.addEventListener('install', function(event) {
