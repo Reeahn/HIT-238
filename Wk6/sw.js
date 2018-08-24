@@ -3,8 +3,7 @@ var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   'test.html',
-  'images/icons/icon-128.png',
-  '.'
+  'images/icons/icon-128.png'
 ];
 
 self.addEventListener('install', function(event) {
