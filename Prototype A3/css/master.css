@@ -11,11 +11,13 @@ header #backBtn {
     font-size: 2em;
     height: 2em;
 }
+
 header h1 {
   margin: 0;
   font-weight: normal;
   font-size: 3em;
 }
+
 /* CSS for the Menus */
 .menuButtons {
   display:grid;
@@ -38,7 +40,7 @@ header h1 {
   grid-row-gap: .2em;
   justify-items: center;
 }
-.allergiesMenu .container {
+.checklistOption {
   background-color: grey;
   font-family: inherit;
   width: 96%;
@@ -47,7 +49,10 @@ header h1 {
 }
 
 .dietryMenu {
-  display: none;
+  display:none;
+  grid-column: 1;
+  grid-row-gap: .2em;
+  justify-items: center;
 }
 
 .searchMenu {
@@ -57,11 +62,10 @@ header h1 {
 some code taken from https://www.w3schools.com/howto/howto_js_accordion.asp
 */
 .expandableList {
-  width: 96%;
   font-family: inherit;
   width: 96%;
   font-size: 2em;
-  padding: .2em 0;
+  padding: .2em 0px .2em .5em;
   background-color: grey;
   cursor: pointer;
   text-align: left;
