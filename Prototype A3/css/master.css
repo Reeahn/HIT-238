@@ -16,7 +16,7 @@ header h1 {
   font-weight: normal;
   font-size: 3em;
 }
-
+/* CSS for the Menus */
 .menuButtons {
   display:grid;
   grid-column: 1;
@@ -33,13 +33,38 @@ header h1 {
 }
 
 .allergiesMenu {
-  display: grid;
+  display: none;
 }
 
 .dietryMenu {
-  display: grid;
+  display: none;
 }
 
 .searchMenu {
-  display: grid;
+  display: none;
+}
+/* CSS for the expandable Menus
+taken from https://www.w3schools.com/howto/howto_js_accordion.asp
+*/
+.expandableList {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.expandableContent {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
