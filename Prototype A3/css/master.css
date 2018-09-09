@@ -1,0 +1,31 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+header {
+  display: grid;
+  grid-template-columns: 20% 76%;
+  padding: 0 2% .2em 2%;
+}
+
+header [name=backBtn] {
+  height: 2em;
+}
+header h1 {
+  margin:auto;
+  font-weight: normal;
+}
+
+.menuButtons {
+  display:grid;
+  grid-column: 1;
+  grid-row: 3;
+  grid-row-gap: .2em;
+  justify-items: center;
+}
+
+.menuButtons [type=Button] {
+  font-family: inherit;
+  width: 96%;
+  font-size: 2em;
+  padding: .2em 0;
+}
