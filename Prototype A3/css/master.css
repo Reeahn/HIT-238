@@ -33,7 +33,17 @@ header h1 {
 }
 
 .allergiesMenu {
-  display: none;
+  display:none;
+  grid-column: 1;
+  grid-row-gap: .2em;
+  justify-items: center;
+}
+.allergiesMenu .container {
+  background-color: grey;
+  font-family: inherit;
+  width: 96%;
+  font-size: 2em;
+  padding: .2em 0;
 }
 
 .dietryMenu {
@@ -43,28 +53,33 @@ header h1 {
 .searchMenu {
   display: none;
 }
-/* CSS for the expandable Menus
-taken from https://www.w3schools.com/howto/howto_js_accordion.asp
+/* CSS for the expandable Menus and lists of options for allergies and dietry
+some code taken from https://www.w3schools.com/howto/howto_js_accordion.asp
 */
 .expandableList {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  width: 96%;
+  font-family: inherit;
+  width: 96%;
+  font-size: 2em;
+  padding: .2em 0;
+  background-color: grey;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
 }
 
-.active, .accordion:hover {
+.active, .expandableList:hover {
     background-color: #ccc;
 }
 
 .expandableContent {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+  display: none;
+  background-color: grey;
+  font-family: inherit;
+  width: 90%;
+  padding: .2em .2em 2% 0;
+  grid-row-gap: .2em;
 }

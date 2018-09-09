@@ -27,11 +27,11 @@ document.querySelector('#searchBtn')
   });
 
 document.querySelector('#backBtn')
-.addEventListener('click', function(evt) {
-  hideDisplay(document.getElementsByClassName('allergiesMenu'));
-  hideDisplay(document.getElementsByClassName('dietryMenu'));
-  hideDisplay(document.getElementsByClassName('searchMenu'));
-  showDisplay(document.getElementsByClassName('menuButtons'));
+  .addEventListener('click', function(evt) {
+    hideDisplay(document.getElementsByClassName('allergiesMenu'));
+    hideDisplay(document.getElementsByClassName('dietryMenu'));
+    hideDisplay(document.getElementsByClassName('searchMenu'));
+    showDisplay(document.getElementsByClassName('menuButtons'));
 });
 
 
@@ -49,14 +49,29 @@ for (i = 0; i < expMenu.length; i++) {
 
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (panel.style.display === "grid") {
             panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+            panel.style.display = "grid";
         }
     });
 };
 /* code so that when all Nuts is selected, all the unselected nuts get checked
 and when all nuts is deselected, all the selected nuts get unchecked */
 
-console.log(document.getElementsByClassName("expandableList"))
+var checkbox = document.querySelector("#allNuts");
+var nuts = document.getElementsByClassName("nut");
+console.log(nuts[0]);
+
+checkbox.addEventListener( 'change', function() {
+    if(this.checked) {
+        // Checkbox is checked..
+
+        for (i = 0; i < nuts.length; i++) {
+          nuts[i].checked;
+        };
+
+    } else {
+        // Checkbox is not checked..
+    };
+});
