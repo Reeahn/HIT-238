@@ -35,28 +35,37 @@ header h1 {
 }
 
 .allergiesMenu {
-  display:none;
+  width: 96%;
+  display:grid;
   grid-column: 1;
   grid-row-gap: .2em;
   justify-items: center;
 }
 .checklistOption {
-  background-color: grey;
   font-family: inherit;
   width: 96%;
   font-size: 2em;
-  padding: .2em 0;
+  padding: .2em 0px .2em .5em;
+  background-color: grey;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
 .dietryMenu {
-  display:none;
+  display:grid;
   grid-column: 1;
   grid-row-gap: .2em;
   justify-items: center;
 }
 
 .searchMenu {
-  display: none;
+  display:grid;
+  grid-column: 1;
+  grid-row-gap: .2em;
+  justify-items: center;
 }
 /* CSS for the expandable Menus and lists of options for allergies and dietry
 some code taken from https://www.w3schools.com/howto/howto_js_accordion.asp
@@ -81,9 +90,13 @@ some code taken from https://www.w3schools.com/howto/howto_js_accordion.asp
 
 .expandableContent {
   display: none;
-  background-color: grey;
+  grid-column: 1;
   font-family: inherit;
   width: 90%;
   padding: .2em .2em 2% 0;
   grid-row-gap: .2em;
+}
+
+.hidden {
+  display: none;
 }

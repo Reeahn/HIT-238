@@ -1,9 +1,15 @@
 function hideDisplay(element) {
-  element[0].style.display = "none";
+  Array.from(element).forEach((elem) => {
+    elem.classList.add('hidden');
+  })
+  //element[0].style.display = "none";
 };
 
 function showDisplay(element) {
-  element[0].style.display = "grid";
+  Array.from(element).forEach((elem) => {
+    elem.classList.remove('hidden');
+  })
+  //element[0].style.display = "grid";
 };
 
 /* hides and shows menus when the main menu buttons are clicked */
@@ -62,16 +68,20 @@ and when all nuts is deselected, all the selected nuts get unchecked */
 var checkbox = document.querySelector("#allNuts");
 var nuts = document.getElementsByClassName("nut");
 console.log(nuts[0]);
+console.log(checkbox)
 
-checkbox.addEventListener( 'change', function() {
-    if(this.checked) {
+checkbox.addEventListener('change', function() {
+    if(checkbox.checked) {
         // Checkbox is checked..
-
+        console.log("checked")
         for (i = 0; i < nuts.length; i++) {
-          nuts[i].checked;
+          nuts[i].checked = true;
         };
-
     } else {
         // Checkbox is not checked..
+        console.log('unchecked')
+        for (i = 0; i < nuts.length; i++) {
+          nuts[i].checked = false;
+        };
     };
 });
