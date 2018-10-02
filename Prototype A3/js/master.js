@@ -67,21 +67,36 @@ and when all nuts is deselected, all the selected nuts get unchecked */
 
 var checkbox = document.querySelector("#allNuts");
 var nuts = document.getElementsByClassName("nut");
-console.log(nuts[0]);
-console.log(checkbox)
 
 checkbox.addEventListener('change', function() {
     if(checkbox.checked) {
         // Checkbox is checked..
-        console.log("checked")
         for (i = 0; i < nuts.length; i++) {
           nuts[i].checked = true;
+          deselectorForNuts(nuts[i],checkbox);
         };
     } else {
         // Checkbox is not checked..
-        console.log('unchecked')
         for (i = 0; i < nuts.length; i++) {
           nuts[i].checked = false;
+          deselectorRemover(nuts,checkbox);
         };
     };
 });
+
+// When the nuts are deslected after allnuts is selected all nuts should be deslected
+function deselectorForNuts(nut,checkbox) {
+  nut.addEventListener('change', function() {
+    if(nut.checked === false) {
+      checkbox.checked = false;
+    };
+  });
+};
+// To minimise strain on the machine, the event listener will be removed when allNuts is unchecked
+function deselectorRemover(nuts,checkbox) {
+  nuts[i].removeEventListener('change', function() {
+    if(nut.checked === false) {
+      checkbox.checked = false;
+    };
+  });
+};
