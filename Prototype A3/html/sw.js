@@ -1,9 +1,9 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('./sw.js')
-      .then(() => console.log('service worker installed with scope: ', registration.scope))
-      .catch(err => console.error('Error', err));
-    });
+    .then(() => console.log('service worker installed with scope: '))
+    .catch(err => console.error('Error', err));
+  });
 };
 
 var CACHE_TITLE = 'my-site-cache';
