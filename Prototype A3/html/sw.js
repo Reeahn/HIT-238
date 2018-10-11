@@ -11,8 +11,8 @@ var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   './',
-  '/css/master.css',
-  '/js/master.js',
+  '/HIT-238/Prototype A3/css/master.css',
+  '/HIT-238/Prototype A3/js/master.js',
 ];
 
 self.addEventListener('install', function(event) {
