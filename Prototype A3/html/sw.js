@@ -7,7 +7,7 @@ if ('serviceWorker' in navigator) {
 };
 
 var CACHE_TITLE = 'my-site-cache';
-var CACHE_VERSION = 'v1';
+var CACHE_VERSION = 'v2';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   './index.html',
@@ -39,5 +39,20 @@ self.addEventListener('fetch', function(event) {
         return fetch(event.request);
       }
     )
+  );
+});
+
+self.addEventListener('activate', function(event) {
+
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+                    if(cacheName !== CACHE_NAME && cacheName.indexOf(CACHE_TITLE) === 0) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
   );
 });
