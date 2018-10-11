@@ -8,7 +8,7 @@
             "type": "image/png"
         },
     ],
-    "start_url": "/HIT-238/Prototype A3/html/inex.html",
+    "start_url": "/HIT-238/Prototype A3/html/index.html",
     "display": "standalone",
     "background_color": "#FFF",
     "theme_color": "#FFF"
