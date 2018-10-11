@@ -1,18 +1,10 @@
 if ('serviceWorker' in navigator) {
-  console.log("its here")
   window.addEventListener('load', function() {
-    console.log("loaded")
-    navigator.serviceWorker.register('./sw.js').then(function(registration) {
-      // Registration was successful
-      console.log("successful")
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log("failed")
-      console.log('ServiceWorker registration failed: ', err);
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('service worker installed with scope: ', registration.scope))
+      .catch(err => console.error('Error', err));
     });
-  });
-}
+};
 
 var CACHE_TITLE = 'my-site-cache';
 var CACHE_VERSION = 'v1';
