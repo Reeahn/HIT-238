@@ -1,0 +1,15 @@
+{
+    "name": "Recipe Finder for People With Allergies and on a Time Limit",
+    "short_name": "RecipeFinder",
+    "icons": [
+        {
+            "src": "/HIT-238/Prototype A3/img/appIcon.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+    ],
+    "start_url": "/HIT-238/Prototype A3/html/inex.html",
+    "display": "standalone",
+    "background_color": "#FFF",
+    "theme_color": "#FFF"
+}
