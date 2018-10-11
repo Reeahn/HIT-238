@@ -7,7 +7,7 @@ if ('serviceWorker' in navigator) {
 };
 
 var CACHE_TITLE = 'my-site-cache';
-var CACHE_VERSION = 'v2';
+var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   './index.html',
