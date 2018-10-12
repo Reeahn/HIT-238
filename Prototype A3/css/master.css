@@ -5,6 +5,12 @@ p {
   font-size: 2em;
   padding: 0 2% .2em 2%;
 }
+
+p #resultsRecipeName {
+  font-size: 3em;
+  padding: 0 2% .2em 2%;
+}
+
 header {
   display: grid;
   grid-template-columns: 20% 76%;
