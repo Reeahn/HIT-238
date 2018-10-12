@@ -1,4 +1,4 @@
-recipes = '[{
+{
     "name": "Beef Stroganoff",
     "ingredients": [
         {
@@ -8,61 +8,54 @@ recipes = '[{
         {
             "name": "700g beef rump steak, trimmed, thinly sliced",
             "type": ["beef", "meat"]
-        }
+        },
         {
             "name": "40g butter, chopped",
             "type": ["dairy", "lactose"]
-        }
+        },
         {
-            "name": "1 1/2 tablespoons olive oil",
-        }
+            "name": "1 1/2 tablespoons olive oil"
+        },
         {
             "name": "2 garlic cloves, finely chopped",
             "type": ["herb"]
-        }
+        },
         {
             "name": "1/2 teaspoon sweet paprika",
             "type": ["herb"]
-        }
+        },
         {
             "name": "400g button mushrooms, sliced",
             "type": ["vegetable"]
-        }
+        },
         {
             "name": "1/2 cup dry white wine",
             "type": ["alcohol"]
-        }
+        },
         {
             "name": "3/4 cup Massel beef style stock",
             "type": ["meat"]
-        }
+        },
         {
             "name": "2 tablespoons tomato paste",
-            "type": ["vegetable", "tomato
-              "]
-        }
+            "type": ["vegetable", "tomato"]
+        },
         {
             "name": "3 teaspoons dijon mustard",
             "type": ["cat"]
-        }
+        },
         {
             "name": "1/4 cup creme fraiche (see note)",
             "type": ["lactose","milk"]
-        }
+        },
         {
             "name": "Cooked Barilla Fettuccine, to serve",
             "type": ["pasta","egg","wheat"]
-        }
+        },
         {
             "name": "Chopped fresh flat-leaf parsley, to serve",
             "type": ["herb"]
         }
     ],
-    "method": [
-      "Place flour and beef in a snap-lock bag. Season with salt and pepper. Shake to coat.",
-      "Place half the butter and 2 teaspoons oil in a large frying pan. Cook over high heat
-      until bubbling. Add half the beef. Cook, stirring, for 3 to 5 minutes or until browned. Transfer to a plate. Repeat with remaining butter, 2 teaspoons oil and beef.",
-      "Reduce heat to medium. Heat remaining oil in pan. Add onion and mushroom. Cook, stirring, for 5 minutes or until soft. Add garlic and paprika. Cook, stirring, for 1 minute.
- Add wine, stock, tomato paste, mustard and beef to pan. Stir to combine. Bring to the boil. Reduce heat to low. Simmer for 5 minutes or until sauce has thickened slightly.",
-    ]
-}]';
+    "method": ["Place flour and beef in a snap-lock bag. Season with salt and pepper. Shake to coat.", "Place half the butter and 2 teaspoons oil in a large frying pan. Cook over high heat until bubbling. Add half the beef. Cook, stirring, for 3 to 5 minutes or until browned. Transfer to a plate. Repeat with remaining butter, 2 teaspoons oil and beef.", "Reduce heat to medium. Heat remaining oil in pan. Add onion and mushroom. Cook, stirring, for 5 minutes or until soft. Add garlic and paprika. Cook, stirring, for 1 minute. Add wine, stock, tomato paste, mustard and beef to pan. Stir to combine. Bring to the boil. Reduce heat to low. Simmer for 5 minutes or until sauce has thickened slightly."]
+}
