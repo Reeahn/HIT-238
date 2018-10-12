@@ -3,7 +3,7 @@ body {
 }
 p {
   font-size: 2em;
-  padding: 0 .2em;
+  padding: 0 2% .2em 2%;
 }
 header {
   display: grid;
