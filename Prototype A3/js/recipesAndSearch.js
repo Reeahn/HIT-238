@@ -7,7 +7,7 @@ fetch('../JSON/recipes.json')
     console.log(Object.keys(recipes));
     document.getElementById('results').innerHTML += recipes["name"] + "\n";
     for (x = 0; x < recipes["method"].length; x++) {
-      document.getElementById('results').innerHTML += recipes["method"][x] + "\n";
+      document.getElementById('results').innerHTML += x + recipes["method"][x] + "\n";
     };
 
   });
