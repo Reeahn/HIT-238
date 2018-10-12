@@ -8,4 +8,6 @@ fetch('../JSON/recipes.json')
       document.getElementById('results').innerhtml += recipes[x];
       console.log(recipes[x]);
     };
-  })
+  });
+
+document.getElementById('results').innerhtml += "why isnt this working";
