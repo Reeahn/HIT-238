@@ -7,6 +7,6 @@ fetch('../JSON/recipes.json')
     console.log(Object.keys(recipes));
     document.getElementById('results').innerHTML += recipes["name"], "\n";
     for (x in recipes["ingredients"]) {
-      doocument.getElementById('results').innerHTML += recipes[x], "\n";
+      document.getElementById('results').innerHTML += recipes[x], "\n";
     };
   });
