@@ -9,3 +9,4 @@ fetch('../JSON/recipes.json')
       document.getElementById('results').innerHTML += recipes[x];
     };
   });
+  
