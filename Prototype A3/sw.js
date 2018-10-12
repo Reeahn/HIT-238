@@ -1,20 +1,12 @@
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js')
-    .then(() => console.log('service worker installed'))
-    .catch(err => console.error('Error', err));
-  });
-};
-
 var CACHE_TITLE = 'my-site-cache';
 var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   './index.html',
   './sw.js',
-  '/HIT-238/Prototype A3/css/master.css',
-  '/HIT-238/Prototype A3/js/master.js',
-  '/HIT-238/Prototype A3/JSON/recipes.json',
+  './css/master.css',
+  './js/master.js',
+  './JSON/recipes.json',
 ];
 
 self.addEventListener('install', function(event) {
