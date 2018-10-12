@@ -1,6 +1,9 @@
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+p {
+  font-size: 2em;
+}
 header {
   display: grid;
   grid-template-columns: 20% 76%;
