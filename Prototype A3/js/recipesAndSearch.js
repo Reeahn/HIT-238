@@ -5,8 +5,8 @@ fetch('../JSON/recipes.json')
   .then(function(myJson) {
     var recipes = myJson;
     console.log(Object.keys(recipes));
-    for (x in recipes) {
-      document.getElementById('results').innerHTML += recipes[x];
+    document.getElementById('results').innerHTML += recipes["name"], "\n";
+    for (x in recipes["ingredients"]) {
+      doocument.getElementById('results').innerHTML += recipes[x], "\n";
     };
-    
   });
