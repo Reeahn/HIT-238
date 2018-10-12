@@ -1,9 +1,9 @@
-{
+recipes = '[{
     "name": "Beef Stroganoff",
     "ingredients": [
         {
             "name": "2 tablespoons plain flour",
-            "type": "wheat"
+            "type": ["wheat"]
         },
         {
             "name": "700g beef rump steak, trimmed, thinly sliced",
@@ -14,28 +14,48 @@
             "type": ["dairy", "lactose"]
         }
         {
-            "name": "Delilah",
-            "type": "cat"
+            "name": "1 1/2 tablespoons olive oil",
         }
         {
-            "name": "Delilah",
-            "type": "cat"
+            "name": "2 garlic cloves, finely chopped",
+            "type": ["herb"]
         }
         {
-            "name": "Delilah",
-            "type": "cat"
+            "name": "1/2 teaspoon sweet paprika",
+            "type": ["herb"]
         }
         {
-            "name": "Delilah",
-            "type": "cat"
+            "name": "400g button mushrooms, sliced",
+            "type": ["vegetable"]
         }
         {
-            "name": "Delilah",
-            "type": "cat"
+            "name": "1/2 cup dry white wine",
+            "type": ["alcohol"]
         }
         {
-            "name": "Delilah",
-            "type": "cat"
+            "name": "3/4 cup Massel beef style stock",
+            "type": ["meat"]
+        }
+        {
+            "name": "2 tablespoons tomato paste",
+            "type": ["vegetable", "tomato
+              "]
+        }
+        {
+            "name": "3 teaspoons dijon mustard",
+            "type": ["cat"]
+        }
+        {
+            "name": "1/4 cup creme fraiche (see note)",
+            "type": ["lactose","milk"]
+        }
+        {
+            "name": "Cooked Barilla Fettuccine, to serve",
+            "type": ["pasta","egg","wheat"]
+        }
+        {
+            "name": "Chopped fresh flat-leaf parsley, to serve",
+            "type": ["herb"]
         }
     ],
     "method": [
@@ -45,4 +65,4 @@
       "Reduce heat to medium. Heat remaining oil in pan. Add onion and mushroom. Cook, stirring, for 5 minutes or until soft. Add garlic and paprika. Cook, stirring, for 1 minute.
  Add wine, stock, tomato paste, mustard and beef to pan. Stir to combine. Bring to the boil. Reduce heat to low. Simmer for 5 minutes or until sauce has thickened slightly.",
     ]
-}
+}]';

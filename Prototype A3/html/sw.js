@@ -14,6 +14,7 @@ var urlsToCache = [
   './sw.js',
   '/HIT-238/Prototype A3/css/master.css',
   '/HIT-238/Prototype A3/js/master.js',
+  '/HIT-238/Prototype A3/JSON/recipes.json',
 ];
 
 self.addEventListener('install', function(event) {
