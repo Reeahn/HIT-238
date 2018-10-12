@@ -8,5 +8,4 @@ fetch('../JSON/recipes.json')
     for (x in recipes) {
       document.getElementById('results').innerHTML += recipes[x];
     };
-    
   });
