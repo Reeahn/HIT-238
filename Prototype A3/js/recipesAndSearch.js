@@ -1,8 +1,10 @@
 fetch('../JSON/recipes.json')
-    .then(function(response) {
-        console.log(response);
-        var recipes = response.json()
-    });
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+});
 // var recipes = JSON.parse(recipes)
 // for (i = 0; i < recipes.length; i++) {
 //   document.getElementById('results').innerhtml += recipes[i]
