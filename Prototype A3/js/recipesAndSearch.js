@@ -10,4 +10,4 @@ fetch('../JSON/recipes.json')
     };
   });
 
-document.getElementById('results').innerhtml += "why isnt this working";
+document.querySelector('#results').innerhtml += "why isnt this working";
