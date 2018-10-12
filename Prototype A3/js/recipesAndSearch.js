@@ -1,6 +1,7 @@
 fetch('../JSON/recipes.json')
     .then(function(response) {
         console.log(response);
+        var recipes = response.json()
     });
 // var recipes = JSON.parse(recipes)
 // for (i = 0; i < recipes.length; i++) {
