@@ -8,5 +8,4 @@ fetch('../JSON/recipes.json')
       document.getElementById('results').innerhtml += recipes[i]
       console.log(recipes[i])
     }
-
 });
