@@ -9,4 +9,5 @@ fetch('../JSON/recipes.json')
     for (x in recipes["method"]) {
       document.getElementById('results').innerHTML += recipes[x], "\n";
     };
+    
   });
