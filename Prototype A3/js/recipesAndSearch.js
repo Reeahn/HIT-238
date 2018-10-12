@@ -3,7 +3,7 @@ fetch('../JSON/recipes.json')
     return response.json();
   })
   .then(function(myJson) {
-    var recipes = JSON.stringify(myJson);
+    var recipes = JSON.parse(myJson);
     console.log(Object.keys(recipes));
     for (x in recipes) {
       document.getElementById('results').innerHTML += recipes[x];
