@@ -1,5 +1,8 @@
 {
     "name": "Beef Stroganoff",
+    "groups" : [
+
+    ],
     "ingredients": [
         {
             "name": "2 tablespoons plain flour",
