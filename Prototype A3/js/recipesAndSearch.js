@@ -9,4 +9,5 @@ fetch('../JSON/recipes.json')
     for (x = 0; x < recipes["method"].length; x++) {
       document.getElementById('results').innerHTML += (x+1) + " " + recipes["method"][x] + "<br>";
     };
+    
   });
